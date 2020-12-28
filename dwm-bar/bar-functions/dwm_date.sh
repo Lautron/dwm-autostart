@@ -6,11 +6,11 @@
 
 # Date is formatted like like this: "[Mon 01-01-00 00:00:00]"
 dwm_date () {
-    printf "%s" "$SEP1"
+    printf "%s" "$SEP1" 
     if [ "$IDENTIFIER" = "unicode" ]; then
         printf "📆 %s" "$(date "+%a %d-%m-%y %R")"
     else
-        printf "%s" "$(date "+%a %d-%m-%y %R")"
+        printf "%s" "$(date "+%a %d %b %R")"
     fi
     printf "%s\n" "$SEP2"
 }
